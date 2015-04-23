@@ -191,6 +191,7 @@
 //#define TELEMETRY_HOTT
 //#define TELEMETRY_SMARTPORT
 #define TELEMETRY_LTM
+//#define TELEMETRY_MAVLINK
 
 #define SERIAL_RX
 #define USE_SERVOS
