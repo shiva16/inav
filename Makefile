@@ -239,7 +239,7 @@ TARGET_FLAGS := $(TARGET_FLAGS) -DSPRACINGF3
 endif
 
 ifeq ($(TARGET),$(filter $(TARGET),$(CC3D_TARGETS)))
-TARGET_FLAGS := $(TARGET_FLAGS) -DCC3D 
+TARGET_FLAGS := $(TARGET_FLAGS) -DCC3D
 ifeq ($(TARGET),CC3D_OPBL)
 TARGET_FLAGS := $(TARGET_FLAGS) -DCC3D_OPBL
 CC3D_OPBL_SRC = $(CC3D_SRC)
@@ -361,6 +361,7 @@ NAZE_SRC = startup_stm32f10x_md_gcc.S \
 		   drivers/barometer_bmp085.c \
 		   drivers/barometer_ms5611.c \
 		   drivers/barometer_bmp280.c \
+		   drivers/io_pca9685.c \
 		   drivers/bus_spi.c \
 		   drivers/bus_i2c_stm32f10x.c \
 		   drivers/compass_hmc5883l.c \
@@ -603,7 +604,7 @@ COLIBRI_RACE_SRC = \
 		   $(HIGHEND_SRC) \
 		   $(COMMON_SRC) \
 		   $(VCP_SRC)
-		   
+
 LUX_RACE_SRC = \
 		   $(STM32F30x_COMMON_SRC) \
 		   drivers/accgyro_mpu.c \
@@ -615,7 +616,7 @@ LUX_RACE_SRC = \
 		   drivers/serial_usb_vcp.c \
 		   $(HIGHEND_SRC) \
 		   $(COMMON_SRC) \
-		   $(VCP_SRC)		   
+		   $(VCP_SRC)
 
 SPARKY_SRC = \
 		   $(STM32F30x_COMMON_SRC) \
