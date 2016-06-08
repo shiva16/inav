@@ -218,7 +218,8 @@
 #define BINDPLUG_PIN   Pin_5
 #endif
 
+#define USE_PCA9685
+
 #undef TELEMETRY_FRSKY
 #undef TELEMETRY_HOTT
 #undef TELEMETRY_SMARTPORT
-

@@ -57,8 +57,6 @@
 #include "drivers/compass_ak8975.h"
 #include "drivers/compass_mag3110.h"
 
-#include "drivers/io_pca9685.h"
-
 #include "drivers/sonar_hcsr04.h"
 
 #include "config/runtime_config.h"
@@ -784,8 +782,6 @@ bool sensorsAutodetect(sensorAlignmentConfig_t *sensorAlignmentConfig, uint8_t g
     } else {
         magneticDeclination = 0.0f; // TODO investigate if this is actually needed if there is no mag sensor or if the value stored in the config should be used.
     }
-
-    pca9685Detect();
 
     return true;
 }
