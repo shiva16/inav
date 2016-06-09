@@ -43,7 +43,9 @@ typedef enum {
     FEATURE_DISPLAY = 1 << 17,
     FEATURE_ONESHOT125 = 1 << 18,
     FEATURE_BLACKBOX = 1 << 19,
-    FEATURE_CHANNEL_FORWARDING = 1 << 20
+    FEATURE_CHANNEL_FORWARDING = 1 << 20,
+    //FEATURE 1<<21 reserved for FEATURE_TRANSPONDER from Cleanflight
+    FEATURE_PWM_SERVO_DRIVER = 1 << 22
 } features_e;
 
 void handleOneshotFeatureChangeOnRestart(void);
